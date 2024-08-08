@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Navbar from './components/NavBar';
 import HeroSection from './components/HeroSection';
 import TopPicks from './components/TopPicks';
 import SearchBar from './components/SearchBar';
@@ -21,9 +22,7 @@ const App = () => {
 
   return (
     <div>
-      {/* <div className="header">
-        <h1>AI Tools Directory</h1>
-      </div> */}
+      <Navbar />
       <HeroSection />
       <TopPicks tools={tools} />
       <div className="search-container">
